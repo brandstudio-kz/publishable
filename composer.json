@@ -37,7 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BrandStudio\\Currency\\PublishableServiceProvider"
+                "BrandStudio\\Publishable\\PublishableServiceProvider"
             ]
         }
     }
