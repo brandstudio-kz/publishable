@@ -8,16 +8,16 @@ trait Publishable
     public static function getStatusOptions() : array
     {
         return [
-            static::PUBLISHED   => trans('publishable::publishable.published'),
-            static::DRAFT       => trans('publishable::publishable.draft'),
+            static::PUBLISHED   => trans('publishable::admin.published'),
+            static::DRAFT       => trans('publishable::admin.draft'),
         ];
     }
 
     public static function getStatusIcons() : array
     {
         return [
-            static::PUBLISHED   => trans('publishable::publishable.published_icon'),
-            static::DRAFT       => trans('publishable::publishable.draft_icon'),
+            static::PUBLISHED   => trans('publishable::admin.published_icon'),
+            static::DRAFT       => trans('publishable::admin.draft_icon'),
         ];
     }
 

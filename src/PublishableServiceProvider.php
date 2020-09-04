@@ -27,7 +27,7 @@ class PublishableServiceProvider extends ServiceProvider
     private function publish()
     {
         $this->publishes([
-            __DIR__.'/resources/lang'      => resource_path('lang/vendor/brandstudio')
+            __DIR__.'/resources/lang'      => resource_path('lang/vendor/publishable')
         ], 'lang');
 
     }
