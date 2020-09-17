@@ -51,10 +51,14 @@ trait Publishable
         });
     }
 
+    public function scopeBeforeRouteBinding($query, $value, $field = null)
+    {
+        $query->active();
+    }
+
     public function getShouldIndexAttribute() : bool
     {
         return $this->status == static::PUBLISHED;
     }
-
 
 }
