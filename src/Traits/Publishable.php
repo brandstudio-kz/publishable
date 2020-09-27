@@ -23,12 +23,12 @@ trait Publishable
 
     public function scopeActive($query)
     {
-        $query->where('status', static::PUBLISHED);
+        $query->where("{$this->getTable()}.status", static::PUBLISHED);
     }
 
     public function scopeDraft($query)
     {
-        $query->where('status', static::DRAFT);
+        $query->where("{$this->getTable()}.status", static::DRAFT);
     }
 
     public function scopeWithActive($query, string $relation, $func = null)
